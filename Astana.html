@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<style>
+* {
+	box-sizing: border-box;
+	margin:0;
+	padding: 0;
+
+}
+li,a,button{
+	font-family:;
+	font-weight:500;
+	font-size:16px;
+	color:#edf0f1;
+	text-decoration: none;
+}
+header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 30px 10%;
+}
+.nav-links{
+	list-style:none;
+}
+.nav-links li{
+	display: inline-block;
+	padding: 0px 20xp;
+}
+.nav-links li a {
+margin-left: 10px;
+	transition: all 0.3s ease 0s;
+}
+.nav-links li a:hover {
+color: #0088a9
+}
+button{
+	padding: 9px 25px;
+	background-color: rgba(0,136,169,1);
+	border:none;
+	border-radius: 50px;
+	transition: all 0.3s ease 0s;
+	cursor: pointer;
+}
+button: hover{
+	background-color: rgba(0,136,169,1);
+}
+.drop {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+#h1{
+	font-family: 'Lato', sans-serif;
+}
+
+#p{
+	font-family: 'Roboto', sans-serif;
+
+}
+
+
+#head{
+	clear: both;
+	background-color: black;
+	color: white;
+	padding: 5px;
+	text-align: center;
+}
+
+#navv{
+	float: left;
+	background-color: #eeeeee;
+	height: 30em;
+	width: 15%;
+	text-align: center;
+	line-height: 50px;
+	padding: 5px;
+	font-family: 'Roboto', sans-serif;
+	
+}
+
+.li{
+	list-style-type: none;
+	text-decoration: none;
+}
+
+.a{
+	text-decoration: none;
+	color: black;
+}
+
+.a:hover{
+	color: white;
+
+	background-color: black;
+	padding-left: 35%;
+	padding-right: 35%;
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+
+section{
+	width: 75%;
+	padding: 20px;
+	float: left;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+section h1{
+	margin-bottom: 20px;
+}
+
+#photo{
+	float:right; margin-left:10px;
+}
+</style>
+<body>
+<header style="height:100px; background-color:#24252A;">
+<img class="logo" style="width:40px;height:40px;" src="C:\Users\Arsen Toksyn\Desktop\Final project WEB\logo.png" alt="logo">
+<nav>
+<ul class="nav-links">
+<li><a href="C:\Users\Arsen Toksyn\Desktop\Final project WEB\mainpage.html">Mainpage</a>
+</li>
+<li><div class="dropdown"><a href="#" class="drop">Cities</a>
+<div class="dropdown-content">
+    <a href="C:\Users\Arsen Toksyn\Desktop\Final project WEB\Astana.html">Astana</a>
+    <a href="C:\Users\Arsen Toksyn\Desktop\Final project WEB\Almaty.html">Almaty</a>
+    <a href="C:\Users\Arsen Toksyn\Desktop\Final project WEB\Turkistan.html">Turkistan</a>
+    <a href="C:\Users\Arsen Toksyn\Desktop\Final project WEB\Mangystau.html">Mangystau</a>
+  </div></div>
+  </li>
+<li><a href="#">Price</a></li>
+</ul>
+</nav>
+
+<a class="cta" href="C:\Users\Arsen Toksyn\Desktop\Final project WEB\Contact us.html"><button>Contact us</button></a>
+</header>
+<header id="head">
+    <h1 id="h1">Places you must visi!</h1>
+  </header>
+
+  <nav id="navv">
+    <li class="li"><a class="a" href="#" id="baiterek" onClick="changeImage(this.id)">Baiterek</a></li>
+    <li class="li"><a class="a" href="#" id="mosque" onClick="changeImage(this.id)">Mosque</a></li>
+    <li class="li"><a class="a" href="#" id="khanshatyr" onClick="changeImage(this.id)">KhanShatyr</a></li>
+  </nav>
+
+  <section>
+    <h1 id="title">Baiterek</h1>
+    <img id="photo" src="baiterek.jpg" width="40%">
+    <p id="intro">
+      London is the capital city of England. It is the most populous city in the United Kingdom,
+      with a metropolitan area of over 13 million inhabitants. Although the city is a center of European commerce, many shops are closed on Sundays, leaving time for lazy brunches or shopping excursions at a local market.
+    </p>
+  </section>
+
+
+  <script>
+    function changeImage(clicked_id){
+
+	
+	var title = "";
+	var new_img = "";
+	var new_p = "";
+	if ("mosque" == clicked_id){
+		title ="Mosque";
+		new_img = "mosque.jpg";
+		p = " Mosque information.";
+	} else if("khanshatyr" == clicked_id){
+		title ="Khanshatyr";
+		new_img = "khanshatyr.jpg";
+		p = "Khanshatyr information."
+	} else if("baiterek" == clicked_id){
+		title ="Baiterek";
+		new_img = "baiterek.jpg";
+		p = "Baiterek informationLondinium."
+	}
+	document.getElementById("title").innerHTML = title;
+	document.getElementById("photo").src = new_img;
+	document.getElementById("intro").innerHTML = p;
+}
+
+function reply_id(){
+	alert("Noted");
+}
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="mainpage.css">
+
+</head>
+<style>
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(fon.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+.row{
+    display: flex;
+    height: 88%;
+    align-items: center;
+        padding-left: 8%;
+    padding-right: 8%;
+}
+.col{
+    flex-basis: 100%;
+}
+h1{
+    color: #fff;
+    font-size: 60px;
+}
+p{
+    color: #fff;
+    font-size: 25px;
+    line-height: 15px;
+}
+#explorebutton{
+    width: 180px;
+    color: #000;
+    font-size: 12px;
+    padding: 12px 0;
+    background: #fff;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+}
+.card{
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+.card1{
+    background-image: url(astana.jpg);
+    width: 300px;
+    height: 300px;
+}
+.card2{
+    background-image: url(almaty.jpg);
+    width: 300px;
+    height: 300px;
+}
+
+.card3{
+    background-image: url(turkistan.jpg);
+    width: 300px;
+    height: 300px;
+}
+
+.card4{
+    background-image: url(kaspi.jpg);
+    width: 300px;
+    height: 300px;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+}
+h5 {
+    color: white;
+}
+
+</style>
+<body>
+<div class="container">
+<header style="height:100px; background-color:#24252A;">
+<img class="logo" style="width:40px;height:40px;" src="C:\Users\Arsen Toksyn\Desktop\Final project WEB\logo.png" alt="logo">
+<nav>
+<ul class="nav-links">
+<li><a href=""C:\Users\Arsen Toksyn\Desktop\Final project WEB\mainpage.html"">Mainpage</a>
+</li>
+<li><div class="dropdown"><a href="#" class="drop">Cities</a>
+<div class="dropdown-content">
+    <a href="C:\Users\Arsen Toksyn\Desktop\Final project WEB\Astana.html">Astana</a>
+    <a href="C:\Users\Arsen Toksyn\Desktop\Final project WEB\Almaty.html">Almaty</a>
+    <a href="C:\Users\Arsen Toksyn\Desktop\Final project WEB\Turkistan.html">Turkistan</a>
+    <a href="C:\Users\Arsen Toksyn\Desktop\Final project WEB\Mangystau.html">Mangystau</a>
+  </div></div>
+  </li>
+<li><a href="#">Price</a></li>
+</ul>
+</nav>
+
+<a class="cta" href="C:\Users\Arsen Toksyn\Desktop\Final project WEB\Contact us.html"><button>Contact us</button></a>
+</header>
+
+<div class="row">
+    <div class="col">
+        <h1>Kazakhstan</h1>
+        <p>Kazakhstan is one of the most popular countries to visit in 21 century where you can meet mountains, lakes, rivers, canyons and sea.</p>
+    <button type="button" id="explorebutton">Explore</button>
+    </div>
+    <div class="col">
+     <div class="card card1">
+     <h5>Astan</h5>
+     <p>Information about city</p>
+     </div>
+     <div class="card card2">
+     <h5>Almaty</h5>
+     <p>Information about city</p>
+     </div>
+     <div class="card card3">
+     <h5>Turkistan</h5>
+     <p>Information about city</p>
+     </div>
+     <div class="card card4">
+     <h5>Mangystau</h5>
+     <p>Information about city</p>
+     </div>
+    </div>
+    </div>
+    </div>
+</body>
+
+</html>
