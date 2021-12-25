@@ -1,0 +1,305 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotels</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="hey.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+* {
+	box-sizing: border-box;
+	margin:0;
+	padding: 0;
+
+}
+li,a,button{
+	font-family:;
+	font-weight:500;
+	font-size:16px;
+	color:#edf0f1;
+	text-decoration: none;
+}
+#header1{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 30px 10%;
+}
+.nav-links{
+	list-style:none;
+}
+.nav-links li{
+	display: inline-block;
+	padding: 0px 20xp;
+}
+.nav-links li a {
+margin-left: 10px;
+	transition: all 0.3s ease 0s;
+}
+.nav-links li a:hover {
+color: #0088a9
+}
+button{
+	padding: 9px 25px;
+	background-color: rgba(0,136,169,1);
+	border:none;
+	border-radius: 50px;
+	transition: all 0.3s ease 0s;
+	cursor: pointer;
+}
+button: hover{
+	background-color: rgba(0,136,169,1);
+}
+.drop {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+#h1{
+	font-family: 'Lato', sans-serif;
+}
+
+#p{
+	font-family: 'Roboto', sans-serif;
+
+}
+
+
+#head{
+	clear: both;
+	background-color: black;
+	color: white;
+	padding: 5px;
+	text-align: center;
+}
+
+#navv{
+	float: left;
+	background-color: #eeeeee;
+	height: 30em;
+	width: 15%;
+	text-align: center;
+	line-height: 50px;
+	padding: 5px;
+	font-family: 'Roboto', sans-serif;
+	
+}
+
+.li{
+	list-style-type: none;
+	text-decoration: none;
+}
+
+.a{
+	text-decoration: none;
+	color: black;
+}
+
+.a:hover{
+	color: white;
+
+	background-color: black;
+	padding-left: 35%;
+	padding-right: 35%;
+	padding-top: 5%;
+	padding-bottom: 5%;
+}</style>
+<body>
+
+<header id="header1" style="height:100px; background-color:#24252A;">
+<img class="logo" style="width:40px;height:40px;" src="C:\Users\Arsen Toksyn\Desktop\Final project WEB\logo.png" alt="logo">
+<nav>
+<ul class="nav-links">
+<li><a href="C:\Users\Arsen Toksyn\Desktop\Final project WEB\mainpage.html">Mainpage</a>
+</li>
+<li><div class="dropdown"><a href="#" class="drop">Cities</a>
+<div class="dropdown-content">
+    <a href="C:\Users\Arsen Toksyn\Desktop\Final project WEB\Astana.html">Astana</a>
+    <a href="C:\Users\Arsen Toksyn\Desktop\Final project WEB\Almaty.html">Almaty</a>
+    <a href="C:\Users\Arsen Toksyn\Desktop\Final project WEB\Turkistan.html">Turkistan</a>
+    <a href="C:\Users\Arsen Toksyn\Desktop\Final project WEB\Mangystau.html">Mangystau</a>
+  </div></div>
+  </li>
+<li><a href="C:\Users\Arsen Toksyn\Desktop\Final project WEB\places.html">Places</a></li>
+<li><a href="C:\Users\Arsen Toksyn\Desktop\Final project WEB\hotels.html">Hotels</a></li>
+</ul>
+</nav>
+
+<a class="cta" href="C:\Users\Arsen Toksyn\Desktop\Final project WEB\Contact us.html"><button>Contact us</button></a>
+</header>
+    
+  <header id="header2">
+    <div class = "banner">
+      <div class = "container">
+        <h1 class = "banner-title">
+          <span> Hotel </span>
+        </h1>
+        <p>don't be tourist, be a traveller</p>
+        <form>
+          <input type = "text" class = "search-input" placeholder="find your paradise . . .">
+          <button type = "submit" class = "search-btn">
+            <i class = "fas fa-search"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </header>
+
+   
+    <div class = "blog-content">
+      <div class = "blog-item">
+        <div class = "blog-img">
+          <img src = "hotel1.jpeg" alt = "">
+       
+        </div>
+        <div class = "blog-text">
+          <span>25 December 2021</span>
+          <h2>Ritz-Carlton</h2>
+          <p>Этот роскошный 5-звездочный отель расположен в Алматы, у подножия гор Алатау. К услугам гостей спа-центр, крытый бассейн и фитнес-центр. В отеле Ritz-Carlton, Almaty предоставляется бесплатный Wi-Fi.
+             Просторные номера оформлены в теплых тонах и оснащены кондиционером. В каждом элегантном номере среди удобств телевизор с плоским экраном и мраморная ванная комната с тропическим душем. </p>
+        </div>
+      </div>
+
+      <div class = "blog-item">
+        <div class = "blog-img">
+          <img src = "hotel2.jpeg" alt = "">
+      
+        </div>
+        <div class = "blog-text">
+          <span>25 December 2021</span>
+          <h2>Swissotel Wellness Resort</h2>
+          <p>Курортный отель Swissôtel Wellness Alatau Almaty расположен в Алма-Ате, в 20 км от спортивного комплекса «Медео». К услугам гостей ресторан, бесплатная частная парковка, фитнес-центр и бар. В этом 5-звездочном отеле имеется общий лаундж, организована доставка еды и напитков в номер. Стойка регистрации открыта круглосуточно, гости могут искупаться в крытом бассейне и попариться в хаммаме.</p>
+         
+        </div>
+      </div>
+      <div class = "blog-item">
+        <div class = "blog-img">
+          <img src = "hotel3.jpeg" alt = "">
+         
+        </div>
+        <div class = "blog-text">
+          <span>25 December 2021</span>
+          <h2>Rahat Palas Hotel</h2>
+          <p>Этот 5-звездочный отель расположен в 200 метрах от Цирка Алматы и Центрального стадиона. К услугам гостей бесплатная парковка, номера с панорамным видом и спа-центр с крытым подогреваемым бассейном.
+            Номера отеля Rahat Palace оформлены в классическом стиле. Они имеют кабельное телевидение, мини-бар и балкон с видом на город или горы Алатау. В ванных комнатах имеются туалетно-косметические принадлежности и фен.</p>
+        </div>
+        </div>
+  
+    
+    <div class = "blog-item">
+      <div class = "blog-img">
+        <img src = "hotel4.jpeg" alt = "">
+      
+      </div>
+      <div class = "blog-text">
+        <span>25 December 2021  </span>
+        <h2>DoubleTree Hotel</h2>
+        <p>Отель Doubletree by Hilton Almaty расположен в центре города Алматы. К услугам гостей ресторан, круглосуточная стойка регистрации и бесплатный Wi-Fi. Осуществляется доставка еды и напитков в номер. К услугам гостей спа-салон и оздоровительный центр с крытым бассейном, а также сауна и бар.
+           Все номера оснащены кондиционером, телевизором с плоским экраном и спутниковыми каналами, чайником, ванной или душем, феном и шкафом.</p>
+     
+      </div>
+    </div>
+    
+    <div class = "blog-item">
+      <div class = "blog-img">
+        <img src = "hotel5.jpeg" alt = "">
+       
+      </div>
+      <div class = "blog-text">
+        <span>25 December 2021</span>
+        <h2>Rixos Almaty</h2>
+        <p>Этот роскошный 5-звездочный отель расположен в центре города Алматы, в 1 км от Никольского собора. К услугам гостей отеля Rixos Almaty современные номера с бесплатным WiFi и спа-салон с бассейном.
+            Во всех номерах Rixos Almaty есть кондиционер, рабочий стол и балкон с прекрасным видом. В ванной комнате установлена ванна и душ. </p>
+        
+      </div>
+    </div>
+    <div class = "blog-item">
+      <div class = "blog-img">
+        <img src = "hotel6.jfif" alt = "">
+      
+      </div>
+      <div class = "blog-text">
+        <span>25 December 2021</span>
+        <h2>Donatello</h2>
+        <p>Бутик-отель с собственной сауной и лаундж-баром находится в Алматы, в 10 минутах езды от Дворца Республики. В номерах с дизайнерским интерьером предоставляется бесплатный Wi-Fi.
+          Все стильные номера бутик-отеля Donatello имеют современный декор и оснащены телевизором с плоским экраном и кондиционером. </p>
+        
+      </div>
+    </div>
+
+    <div class="price">
+      <h1>Price list</h1>
+    <table class="table table-striped table-dark" style="width:130%; margin-left:100px">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Otel</th>
+          <th scope="col">Hostel</th>
+          <th scope="col">Polulux</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1 day</th>
+          <td>10 000tg</td>
+          <td>15 000tg</td>
+          <td>20 000tg</td>
+        </tr>
+        <tr>
+          <th scope="row">2 days</th>
+          <td>17 000tg</td>
+          <td>23 000tg</td>
+          <td>28 000tg</td>
+        </tr>
+        <tr>
+          <th scope="row">3 days</th>
+          <td>27 000tg</td>
+          <td>31 000tg</td>
+          <td>39 000tg</td>
+        </tr>
+        <tr>
+          <th scope="row">4 days</th>
+          <td>34 000tg</td>
+          <td>40 000tg</td>
+          <td>46 000tg</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+</body>
+</html>

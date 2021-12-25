@@ -1,0 +1,40 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family montserrat;
+	background: #56C3D0;
+	height: 100vh;
+	overflow: hidden;
+
+}
+
+.login-form{
+	position: absolute;
+	top: 30%;
+	left: 40%;
+	transform: translate (-50%, -50%);
+	width: 400px;
+	background: rgb(255,255,255);
+	border-radius: 10px;
+}
+.login-form h1{
+	text-align: center;
+	pading 0 0 20px 0;
+	
+}
+
+.login-form form{
+	padding-left: 20%;
+}
+
+form .txt {
+	position: relative;
+	margin: 20px 0;
+}
+.txt input{
+	width: 80%
+	padding: 0 5px;
+	height: 40px;
+	font-size: 16px;
+	border: none;
+}
